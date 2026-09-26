@@ -1,5 +1,5 @@
 import { Shell } from "@/components/layout/Shell";
 
-export default function ModulesLayout({ children }: { children: React.ReactNode }) {
+export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return <Shell>{children}</Shell>;
 }

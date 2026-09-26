@@ -7,11 +7,9 @@ export function Shell({ children }: { children: React.ReactNode }) {
     <div className="relative flex h-screen overflow-hidden">
       <AnimatedBackground />
       <Sidebar />
-      <div className="relative flex flex-1 flex-col overflow-hidden z-10">
+      <div className="relative z-10 flex flex-1 flex-col overflow-hidden">
         <TopBar />
-        <main className="flex-1 overflow-y-auto p-6 animate-fade-in">
-          {children}
-        </main>
+        <main className="animate-fade-in flex-1 overflow-y-auto p-4 sm:p-6">{children}</main>
       </div>
     </div>
   );

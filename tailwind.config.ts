@@ -16,6 +16,11 @@ const config: Config = {
     },
     extend: {
       colors: {
+        sun: "#ffc900",
+        ink: "#0f0d0a",
+        signal: "#dc341e",
+        process: "#1e40c9",
+        newsprint: "#f6f1e6",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -54,6 +59,18 @@ const config: Config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        display: ["var(--font-archivo)", "Archivo Black", "Impact", "sans-serif"],
+        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
+      },
+      boxShadow: {
+        hard: "6px 6px 0 #0f0d0a",
+        "hard-sm": "4px 4px 0 #0f0d0a",
+        "hard-xs": "3px 3px 0 #0f0d0a",
+        "hard-sun": "6px 6px 0 #ffc900",
+        "hard-white": "6px 6px 0 #ffffff",
+        "hard-ink": "6px 6px 0 #0f0d0a",
       },
       keyframes: {
         "accordion-down": {
